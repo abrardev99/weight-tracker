@@ -1,18 +1,42 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <weight-form></weight-form>
+    <br />
+    <hr />
+    <br />
+    
+      <show-list></show-list>
+   
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import WeightForm from "@/components/WeigthForm.vue";
+import ShowList from "../components/ShowList.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    HelloWorld
+    WeightForm,
+    ShowList
   }
-}
+};
 </script>
+<style  scoped>
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 1s ease;
+}
+
+.fade-leave {
+}
+
+.fade-leave-active {
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+</style>
