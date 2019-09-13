@@ -40,6 +40,8 @@ export default {
       this.success = true;
       this.name = "";
       this.weight = "";
+      // showing base url from .env file
+      // console.log(process.env.BASE_URL)
     }
   }
 };
