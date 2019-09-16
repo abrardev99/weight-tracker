@@ -27,5 +27,12 @@ export default new Router({
       name: "history",
       component: () => import('./views/History.vue')
     }
+    ,
+
+    {
+      path: '/dt',
+      name: "dt",
+      component: () => import('./views/DataTablePrac.vue')
+    }
   ]
 })
